@@ -27,6 +27,7 @@ import Sidebar from '../Sidebar';
 
 // Dashboard component is loaded directly as an example of server side rendering
 import Dashboard from '../../pages/dashboard/Dashboard';
+import FciDashboard from '../../pages/fciDashboard/FciDashboard';
 
 const PostsBundle = Bundle.generateBundle(loadPosts);
 const PrivacyBundle = Bundle.generateBundle(loadPrivacy);
@@ -68,6 +69,13 @@ class Layout extends React.Component {
                                                   />
                                                   <main className={s.content}>
                                                             <Switch>
+                                                                      <Route
+                                                                        path="/app/fci"
+                                                                        exact
+                                                                        component={
+                                                                          FciDashboard
+                                                                        }
+                                                                      />
                                                                       <Route
                                                                                 path="/app"
                                                                                 exact

@@ -15,6 +15,11 @@ const Sidebar = () => (
 
                     <ul className={s.nav}>
                               <LinksGroup
+                                header="FCI Dashboard"
+                                headerLink="/app/fci"
+                                iconName="glyphicon-money"
+                              />
+                              <LinksGroup
                                         header="Dashboard"
                                         headerLink="/app"
                                         iconName="glyphicon-tree-conifer"
