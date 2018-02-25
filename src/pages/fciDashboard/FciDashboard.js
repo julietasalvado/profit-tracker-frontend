@@ -32,6 +32,7 @@ class FciDashboard extends React.Component {
           <li className="active">
             FCI Dashboard
           </li>
+          <h1 className="mb-lg">FCI Dashboard</h1>
         </ol>
       </div>
     );
