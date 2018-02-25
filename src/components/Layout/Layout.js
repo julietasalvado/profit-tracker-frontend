@@ -14,6 +14,7 @@ import { Switch, Route, withRouter } from 'react-router';
 // an example of react-router code-splitting
 /* eslint-disable */
 import loadPosts from 'bundle-loader?lazy!../../pages/posts/Posts';
+import loadFcis from 'bundle-loader?lazy!../../pages/fci/Fcis';
 import loadPrivacy from 'bundle-loader?lazy!../../pages/privacy/Privacy';
 import loadProfile from 'bundle-loader?lazy!../../pages/profile/Profile';
 import loadNotFound from 'bundle-loader?lazy!../../pages/notFound/NotFound';
@@ -30,6 +31,7 @@ import Dashboard from '../../pages/dashboard/Dashboard';
 import FciDashboard from '../../pages/fciDashboard/FciDashboard';
 
 const PostsBundle = Bundle.generateBundle(loadPosts);
+const FcisBundle = Bundle.generateBundle(loadFcis);
 const PrivacyBundle = Bundle.generateBundle(loadPrivacy);
 const ProfileBundle = Bundle.generateBundle(loadProfile);
 const NotFoundBundle = Bundle.generateBundle(loadNotFound);
@@ -87,6 +89,12 @@ class Layout extends React.Component {
                                                                                 path="/app/posts"
                                                                                 component={
                                                                                           PostsBundle
+                                                                                }
+                                                                      />
+                                                                      <Route
+                                                                                path="/app/fcis"
+                                                                                component={
+                                                                                  FcisBundle
                                                                                 }
                                                                       />
                                                                       <Route

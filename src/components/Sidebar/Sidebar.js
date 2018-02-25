@@ -25,6 +25,18 @@ const Sidebar = () => (
                                         iconName="glyphicon-tree-conifer"
                               />
                               <LinksGroup
+                                header="FCIs"
+                                headerLink="/app/fics"
+                                childrenLinks={[
+                                  {
+                                    name: 'Add new',
+                                    link:
+                                      '/app/fcis/new',
+                                  },
+                                ]}
+                                iconName="glyphicon-list-alt"
+                              />
+                              <LinksGroup
                                         header="Posts"
                                         headerLink="/app/posts"
                                         childrenLinks={[
