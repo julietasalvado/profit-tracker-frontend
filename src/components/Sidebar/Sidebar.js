@@ -10,7 +10,7 @@ import LinksGroup from './LinksGroup/LinksGroup';
 const Sidebar = () => (
           <nav className={s.root}>
                     <header className={s.logo}>
-                              <Link to="/app">React Dashboard</Link>
+                              <Link to="/app">Profit Tracker</Link>
                     </header>
 
                     <ul className={s.nav}>
