@@ -17,7 +17,7 @@ const Sidebar = () => (
                               <LinksGroup
                                 header="FCI Dashboard"
                                 headerLink="/app/fci"
-                                iconName="glyphicon-money"
+                                iconName="glyphicon-usd"
                               />
                               <LinksGroup
                                         header="Dashboard"
